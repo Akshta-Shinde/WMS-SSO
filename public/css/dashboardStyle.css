@@ -1,0 +1,96 @@
+.center {
+    padding-left: 110px;
+}
+
+.orderID {
+    font-size: 20px;
+    background-color: #20B7E8;
+    color: black;
+}
+
+.list-group-item {
+    background-color: #f3f3f3;
+    font-size: 17px;
+    font-weight: 500;
+    border: gray;
+}
+
+.list-group-item:nth-child(even) {
+    /* background-color: #D9D9D9; */
+    background-color: #E7E9EB;
+}
+
+.cardTitile {
+    text-align: center;
+    color: white;
+    font-weight: 100;
+}
+
+.num {
+    font-size: 20px;
+    background-color: transparent;
+    color: black;
+    float: right;
+}
+
+.card {
+    border-radius: 20px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-height: 600px;
+}
+
+#displayColumn1 {
+    background-color: #00cc7f;
+}
+
+#displayColumn2 {
+    background-color: #20b7e8;
+    /* display: none; */
+}
+
+#displayColumn3 {
+    background-color: #00819d;
+    /* display: none; */
+}
+
+.headerbar-center {
+    color: black;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    padding-top: 5px;
+}
+
+#colLines1, #colLines2, #colLines3 {
+    max-height: 500px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.list-group {
+    align-items: center;
+    font-size: medium;
+    background-color: transparent;
+}
+
+.deFlow {
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.list-group-item:hover {
+    background-color: rgb(198, 196, 196);
+    /* font-size: 22px; */
+}
+
+#inward {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+#inward .num {
+    color: white;
+}

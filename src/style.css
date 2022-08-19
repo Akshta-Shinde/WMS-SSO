@@ -1,0 +1,244 @@
+/*Expandable Table*/
+
+
+.iconClr{
+	color:#369cb2;
+}
+.btnRound{
+border-radius:50%;
+}
+
+.btnRound:hover{
+	box-shadow:1px 3px #000;
+}
+.collapseButton {
+  vertical-align: text-top;
+}
+
+#hidden {
+  display: none;
+}
+
+.expandTable .Table {
+  margin-left: 12em;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+.expandTable table {
+  border-collapse: collapse;
+}
+
+table th, thead {
+    background-color: #7a8dac;
+    color: #fff;
+}
+#collapseButton:hover {
+     cursor: pointer;
+}
+.tbPlusMin{
+	font-size: 18px;
+    font-weight: 900;
+}
+/*Expandable Table End*/
+
+/*Login start*/
+
+.login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.login-form-1{
+    padding: 2%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    background-color: #80808012;
+}
+.login-form-1 h3{
+    text-align: center;
+    color: #333;
+}
+.login-form-2{
+    padding: 5%;
+    background: #4a647f;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2 h3{
+    text-align: center;
+    color: #fff;
+}
+.login-container form{
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 40%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.login-form-1 .btnSubmit{
+    font-weight: 600;
+    color: #fff;
+    background-color: #0062cc;
+}
+.login-form-2 .btnSubmit {
+    font-weight: 600;
+    color: #fff;
+    background-color: #54c554;
+    box-shadow: 2px 4px #104710;
+}
+
+.login-form-2  .btnSubmit:hover{
+	background-color: #33a233;
+    box-shadow: 0px 0px #ddd;
+}
+.login-form-2 .ForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.login-form-1 .ForgetPwd{
+    color: #0062cc;
+    font-weight: 600;
+    text-decoration: none;
+}
+	
+.logoImg{
+	width: 37%;
+    margin-left: 30%;
+    margin-top: -6%;
+    margin-bottom: -4%;
+}
+/*Login start End */
+
+iframe {
+    /* margin-top: 65px; */
+    float: left;
+    padding: 5px;
+    width: 100%;
+    /* background-color: whitesmoke; */
+    height: 687px;
+    border-style: initial;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+#iksHeader td{
+    border: 1px solid #DCDCDC; 
+    padding: 10px;
+    
+}
+
+#iksHeader {
+    width: 95%;
+}
+
+/* #dataTable {
+	width: 100%;
+	overflow-x:auto;
+} */
+
+.btnSubmitIframes
+{
+    width: 8%;
+    border-radius: 1rem;
+    padding: 0.4%;
+    border: none;
+    cursor: pointer;
+    /* float: right; */
+}
+
+.btnSubmitIframes {
+    font-weight: 600;
+    color: #fff;
+    background-color: #54c554;
+    box-shadow: 2px 4px #104710;
+}
+
+ .btnSubmitIframes:hover{
+	background-color: #33a233;
+    box-shadow: 0px 0px #ddd;
+}
+
+/* cancel button */
+.cnclbtnSubmitIframes
+{
+    width: 8%;
+    border-radius: 1rem;
+    padding: 0.4%;
+    border: none;
+    cursor: pointer;
+    /* float: right; */
+}
+
+.cnclbtnSubmitIframes {
+    font-weight: 600;
+    color: #fff;
+    background-color: #f04d4d ;
+    box-shadow: 2px 4px #500b0b;
+}
+
+ .cnclbtnSubmitIframes:hover{
+	background-color:#eb0909;
+    box-shadow: 0px 0px #ddd;
+}
+
+/* The Modal (background) */
+.iks-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+.evole-txt{
+    color: #00cc7f; 
+    font-size: 25px; 
+    font-weight: bold;
+}
+
+.enable-txt{
+    color: #20b7e8; 
+    font-size: 25px; 
+    font-weight: bold;
+}
+
+.empower-txt{
+    color: #00819d; 
+    font-size: 25px; 
+    font-weight: bold;
+}
+
+.googleBtn{
+    float:right;
+    margin-top: -26px;
+}
+
+.loginError{
+    color: red;
+    font-style: italic;
+    margin-left: 38%;
+}
+
+.loginMsg{
+    color: blue;
+    font-style: italic;
+    margin-left: 37%;
+}

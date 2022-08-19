@@ -1,0 +1,642 @@
+html{
+    overflow: hidden;
+}
+
+body {
+    background-color: #f7f7f7;
+    font-family: 'Roboto';
+}
+
+.displayHeader {
+    color: white;
+    /* Outward Background CSS */
+    /* background-color: #087F8C; */
+    /* Inward Backgrounf CSS */
+    background: rgb(8, 103, 68);
+    /* background: linear-gradient(90deg, rgba(8, 103, 68, 1) 0%, rgba(2, 88, 56, 1) 97%); */
+}
+
+.gateInHeader{
+    color: white;
+    background: rgb(0, 1, 68);
+    padding: 0px;
+}
+
+#displayHeader {
+    /* color: white; */
+    /*Inward color*/
+    color: white;
+    /*Outward color*/
+}
+
+#transactionActivities {
+    text-align: center;
+    margin-top: 10px;
+    /* border-top: 2px black solid; */
+}
+
+/* #mainDiv {
+    background-color: #f7f7f7;
+} */
+
+#displayTitle {
+    color: black;
+    /* font-weight: 100; */
+    /* font-size: 25px; */
+    /* padding-top: 10px; */
+    text-align: center;
+}
+
+#profilePic {
+    height: 50px;
+    width: 40px;
+    padding-top: 12px;
+}
+
+#userInfo {
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-control {
+    color: white;
+    /*Outward Color */
+    /* color: #29eca3; */
+    /* Inward Color */
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.lineScrolls {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.linesSt:nth-child(even) {
+    background-color: #D9D9D9;
+}
+
+#displayLineItems .row {
+    text-align: left;
+    padding-top: 5px;
+    /* padding-left: 75px; */
+    /* padding-right: 75px; */
+    font-size: 17px;
+    border: 5px;
+    border-radius: 5px;
+}
+
+#displayLineItems .text-xl {
+    background-color: rgb(30, 29, 29);
+    margin-right: 65px;
+    margin-left: 65px;
+    font-size: 18px;
+    font-weight: 200;
+    color: white;
+    padding: 8px;
+}
+
+#displayLineItems {
+    padding-top: 10px;
+}
+
+#header {
+    background-color: white;
+    color: black;
+    /* overflow-x: hidden;
+    /* Scroll bar removed */
+    /* overflow-x: hidden; */
+}
+
+.modal-body {
+    font-size: 20px;
+}
+
+#headerLogo {
+    height: 60px;
+    padding-left: 10px;
+}
+
+.txt-color-blk {
+    color: rgb(10, 49, 51);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.option-class { 
+    background-color: #a6a6a6;
+}
+
+.dateTime-txt{
+    background-color: #086744;
+    border: none;
+    font-size: 18px;
+}
+
+.save-btn{
+    font-size:30px;
+    border:none;
+    background-color: transparent;
+    color:#00ff00;
+    float: right;
+}
+
+.cancel-btn{
+    font-size:30px;
+    border:none;
+    background-color: transparent;
+    color:red;
+    float: right;
+}
+
+.save-li-btn{
+    font-size:20px;
+    border:none;
+    background-color: transparent;
+    color:#00ff00;
+}
+
+.cancel-li-btn{
+    font-size:20px;
+    border:none;
+    background-color: transparent;
+    color:red;
+}
+
+.activities{
+    text-align: center;
+    margin-top: 20px;
+    border-top: 2px black solid;
+}
+
+.edit-btn{
+    font-size:30px;
+    border:none;
+    background-color: transparent;
+    color:blue;
+}
+
+.delete-btn{
+    font-size:20px;
+    border:none;
+    background-color: transparent;
+    color:red;
+}
+
+.add-btn{
+    font-size:20px;
+    border:none;
+    background-color: transparent;
+    color: green;
+}
+
+.fnt-18{
+    font-size: 18px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    border-top: 2px solid black;
+    background-color:lightgray;
+    padding-bottom: 15px;
+ }
+.cnt-div-height{
+    height: 300px;
+}
+
+.cnt-div-width{
+    width: 90%;
+}
+
+.txn-btn{
+    border:1px solid #DCDCDC;
+    background-color: transparent;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+.txn-num{
+    text-align: right;
+    padding-right: 94px;
+}
+
+.txn-lines{
+    max-height: 500px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.gateIn-btn{
+    padding-top: 39px;
+    text-align: right;
+}
+
+.fnt-20{
+    font-size: 20px;
+}
+
+.pad-left{
+    padding-left: 180px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    padding-top: 8px;
+    /* background-color: black; */
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.btn-margin{
+    margin-left: 5px;
+}
+ /* Sticker CSS */
+.stickersTable {
+	text-align:center;
+    font-family:Arial Bold;
+    font-size: 1.4em;
+}
+
+.stickerTR{
+	text-align:center;
+}
+
+.stickerOuterDiv{
+	width:100%;
+	background-color:lightgrey;
+    padding-top:10px;
+    padding-bottom:10px;
+    box-shadow: 0 0 1px 3px grey inset;
+  }
+  
+
+.stickerDiv{
+	background-color:white;
+    margin-right: auto;
+    margin-left: auto;    
+    margin-top:10px;
+    padding:5px;
+    width:288px;
+    /* height:192px; */
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.xOfy{
+	font-size:50px;
+    font-weight: bold;
+}
+
+.stickerBarcode{
+	font-size: 0.8em;
+    font-weight: bold;
+    background-color:white;
+    text-align:center;
+    font-family:Arial Bold;
+    margin:0px;
+}
+.btnPrint{
+    margin-top: 0%;
+    margin-left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display:none;
+  
+  }
+  .stickerDiv:hover + .btnPrint, .btnPrint:hover{
+      display: inline-block;
+  }
+
+  .selectedBarcode{
+    background-color: lightyellow;
+    border: solid;
+
+  }
+/* SAN Email CSS */
+
+.sanHeaderTop{
+    font-size: 65px;
+    color: white;
+    padding:2px;
+}
+
+.sanEmailOuterDiv {
+    width: 100%; 
+    box-shadow: 0 0 1px 3px grey inset;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+ .sanEmailDiv {
+     font-family:arial,sans-serif;
+     background-color: white;
+     margin-right: auto;
+     margin-left: auto;
+     margin-top: 10px;
+     padding: 5px;
+     width: 637px;
+     height: auto;
+     border:1px solid black;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+ 
+ .additionalComment{
+    display:none;
+}
+
+.SANheader {
+    text-align:center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left:81px;
+}
+
+.selectedRow{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.sanIcon{
+    font-size: 83px;
+}
+
+.sanEmailHeader{
+    border:1px solid darkgrey; 
+    text-align:left; 
+    padding:5px;
+    background:#d5d5d5;
+}
+
+.sanEmailLine{
+    border:1px solid darkgrey; 
+    text-align:center; 
+    padding:5px;
+}
+
+.sanTable{
+    font-family:arial,sans-serif; 
+    border-collapse:collapse; 
+    width:62%;
+}
+
+/* AssociatePO LineItems */
+
+.poHeaderTable {
+    border-collapse:collapse;
+    width:100%;
+}
+.poLinesTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.purchaseOrderOuter {
+    width: 100%; 
+    box-shadow: 0 0 1px 3px grey inset;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.poInner {
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    padding: 15px;
+    width: 637px;
+    height: auto;
+    border:1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.poHeader {
+    border:1px solid darkgrey;
+    text-align:center;
+    padding:5px;
+    background:#d5d5d5
+}
+.poLine{
+    border:1px solid darkgrey;
+    text-align:center;
+    padding:5px
+}
+
+.PurchaseOrderHeader {
+    text-align:center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left:303px;
+}
+   
+.selectedPO {
+    margin-left: 432px;
+    margin-top: 8px;
+}
+
+/* Receive Consolidate Invoice */
+
+.scanBarcodeText{
+    text-align:center;
+    margin-top: 16px;
+    margin-bottom:10px;
+ }
+
+ .header_ReceiveConsolidateInvoice{
+	font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* GRN One Email */
+
+.grnTable {
+    font-family:arial,sans-serif;
+    border-collapse:collapse;
+    width:62%; 
+  }
+  .grnLineTable {
+    font-family:arial,sans-serif;
+    border-collapse:collapse;
+    width:100%;
+  }
+  .grnEmailOuterDiv {
+    width: 100%; 
+    box-shadow: 0 0 1px 3px grey inset;
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+  .grnEmailDiv {
+    font-family:arial,sans-serif;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    padding: 5px;
+    width: 637px;
+    height: auto;
+    border:1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .grnEmailHeader {
+    border:1px solid darkgrey;
+    text-align:center;
+    padding:5px;
+    background:#d5d5d5
+  }
+  .grnEmailLine{
+    border:1px solid darkgrey;
+    text-align:center;
+    padding:5px
+  }
+  .GRNheader {
+    text-align:center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left:80px;
+  }
+
+  .lineItems {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+  }
+  /* Generic Table CSS */
+
+  /* Generic Table CSS */
+  .tTableOuter{
+    width: 100%; 
+    box-shadow: 0 0 1px 3px grey inset;
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+
+  .tTable {
+    border-collapse:collapse;
+    width: 95%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    color: black;
+    font-size:1.5em;
+}
+
+.tHeader {
+    border:1px solid darkgrey; 
+    text-align:center;
+    padding:5px;
+    background:#d5d5d5;
+}
+.tLine{
+    border:1px solid darkgrey;
+    text-align:center;
+    padding:5px;
+    font-weight: bold;
+}
+
+/* Scroll bar */
+
+::-webkit-scrollbar {
+	width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+  } 
+
+  ::-webkit-scrollbar-thumb {
+	background: #888; 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+  }
+
+  /* Alert Adjust */
+
+  .alertPadding{
+    padding-left: 10px;
+  }
+
+ .closeSize {
+    font-size: 40.5px;
+ }
+
+  /* Title  */
+
+.titleDiv{
+    font-size: 1.7em;
+    line-height: 1.3;
+}	
+
+.titleWHCustomer{
+    color: black;
+    font-weight: bold;
+}
+
+.titleOperation{
+    color: #00819D;
+    font-weight: bold;
+}
+
+/* Table scroll  */
+
+.half-screen {
+    max-height: 34vh;
+}
+
+/* ClientOnBoarding */
+
+.cob_select_header{
+    font-weight: bold; 
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.cob_select{
+    width: 62%;
+    font-size: 140%;
+}
+
+.cob_select_option{
+    background-color: #a6a6a6;
+}
+
+.logout-btn{
+    border: none;
+    background: none;
+}
+
+.ul-logout{
+    background-color: whitesmoke;
+}
+
+li{
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#userDetails{
+    box-shadow: none;
+    background: none;
+}
+
+.dmenu{
+    width: 70%;
+}
+/* #displayLayout{
+    margin-left: 34px;
+} */
+

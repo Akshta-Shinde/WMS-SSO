@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>EmizaWMS</title>
+
+		<!-- BEGIN META -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://kit.fontawesome.com/f11a73d15e.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<!-- END META -->
+	
+		<!-- BEGIN STYLESHEETS -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300italic,400italic,300,400,500,700,900' rel='stylesheet' type='text/css' />
+		<link type="text/css" rel="stylesheet" href="../assets/css/theme-default/bootstrap.css?1422792965" />
+	
+		<link type="text/css" rel="stylesheet" href="../assets/css/theme-default/materialadmin.css?1425466319" />
+	
+		<link type="text/css" rel="stylesheet" href="../assets/css/theme-default/font-awesome.min.css?1422529194" />
+	
+		<link type="text/css" rel="stylesheet" href="../assets/css/theme-default/material-design-iconic-font.min.css?1421434286" />
+	
+		<link type="text/css" rel="stylesheet" href="css/wms.css" />
+		<script src="js/GateInTxnList.js"></script>
+		<script src="js/emizaMdm.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/constants.js"></script>
+
+		<!-- END STYLESHEETS -->
+
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../assets/js/libs/utils/html5shiv.js?1403934957"></script>
+		<script type="text/javascript" src="../assets/js/libs/utils/respond.min.js?1403934956"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- BEGIN HEADER-->
+		<header id="header">
+			<div class="headerbar row">
+				<div class="col-md-3">
+					<img id="headerLogo" src="../assets/img/logo.png" alt="">
+				</div>
+				<div id="displayTitle" class="col-md-6">
+					<!-- WMS @ Warehouse01, Operation: Gate-In -->
+				</div>
+				<div id="userInfo" class="col-md-3">
+					USERNAME Role
+				</div>
+			</div>
+		</header>
+		<!-- END HEADER-->
+
+		<!-- BEGIN BASE-->
+		<div id="mainDiv">
+			<!-- BEGIN CONTENT-->
+			<div id="content">
+				<div id="fm-alerts" class="fnt-20">
+
+				</div>
+				<div id="displayLayout">
+                    <!-- <section class="gateInHeader clearfix">
+						<div class="contain-lg">
+							<div class="doc-section doc-lead">
+                                <div class="row">
+                                    <div class="col-md-8 text-lg">
+                                        <div><label for="transaction">Showing Transactions For:</label></div>
+                                        <button id="backward" class="txn-btn" onclick="getPrevDate();">&laquo; Previous Day</button>
+                                        <input type="date" id="txnDate" onchange="getTxnList();" style="color: black;">
+                                        <button id="forward" class="txn-btn" onclick="getNextDate();">Next Day &raquo;</button>
+                                    </div>
+									<div class="col-md-4 text-lg gateIn-btn">
+										<button class="txn-btn" onclick="createNewGateIn();">Create New Gate-In</button>
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div id="displayLineItems" class="text-lg">
+
+                    </div> -->
+				</div> <!--end #Layout-->
+				<div id="displayActivities" class="row footer txt-center">
+					
+				</div>
+			</div><!--end #content-->		
+		</div><!--end #mainDiv-->
+
+		<!-- BEGIN JAVASCRIPT -->
+			
+		<script src="../assets/js/libs/jquery/jquery-1.11.2.min.js"></script>
+		<script src="../assets/js/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
+		<script src="../assets/js/libs/jquery-ui/jquery-ui.min.js"></script>
+		<script src="../assets/js/libs/bootstrap/bootstrap.min.js"></script>
+		<script src="../assets/js/libs/spin.js/spin.min.js"></script>
+		<script src="../assets/js/libs/autosize/jquery.autosize.min.js"></script>
+		<script src="../assets/js/libs/bootstrap-rating/bootstrap-rating-input.min.js"></script>
+		<script src="../assets/js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
+		<script src="../assets/js/core/source/App.js"></script>
+		<script src="../assets/js/core/source/AppNavigation.js"></script>
+		<script src="../assets/js/core/source/AppOffcanvas.js"></script>
+		<script src="../assets/js/core/source/AppCard.js"></script>
+		<script src="../assets/js/core/source/AppForm.js"></script>
+		<script src="../assets/js/core/source/AppNavSearch.js"></script>
+		<script src="../assets/js/core/source/AppVendor.js"></script>
+		<script src="../assets/js/core/demo/Demo.js"></script>
+		<script src="../assets/js/core/demo/DemoDocs.js"></script>
+
+		<!-- <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script> -->
+		<!-- END JAVASCRIPT -->
+
+	</body>
+</html>

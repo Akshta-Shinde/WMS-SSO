@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>EmizaWMS</title>
+
+		<!-- BEGIN META -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://kit.fontawesome.com/f11a73d15e.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<!-- END META -->
+	
+		<!-- BEGIN STYLESHEETS -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,300,400,500,700,900' rel='stylesheet' type='text/css' />
+		<link type="text/css" rel="stylesheet" href="../assets/css/theme-default/bootstrap.css?1422792965" />
+	
+		<link type="text/css" rel="stylesheet" href="../assets/css/theme-default/materialadmin.css?1425466319" />
+	
+		<link type="text/css" rel="stylesheet" href="../assets/css/theme-default/font-awesome.min.css?1422529194" />
+	
+		<link type="text/css" rel="stylesheet" href="../assets/css/theme-default/material-design-iconic-font.min.css?1421434286" />
+	
+		<link type="text/css" rel="stylesheet" href="css/wms.css" />
+		<link type="text/css" rel="stylesheet" href="css/dashboardStyle.css" />
+		<script src="js/inward.js"></script>
+		<script src="js/constants.js"></script>
+		<script src="js/emizaMdm.js"></script>
+		<script src="js/common.js"></script>
+		
+	</head>
+	<body>
+		<!-- <header id="header">
+			<div class="headerbar row" style="width:99%;">
+				<div class="col-md-3">
+					<div class="btn-group">
+						<button class="btn dropdown-toggle btn-box-shadow" data-toggle="dropdown" aria-expanded="false" style="box-shadow: none;">
+							<i class="fa fa-bars"></i>
+						</button>
+						<ul class="dropdown-menu animation-expand dmenu">
+							<li onclick="getDetails('|100001|1')">Customer Onboarding </li>
+							<li onclick="getDetails('|110000')">Create Gate Entry</li>
+							<li>Create PO</li>
+							<li>Create SO</li>
+						</ul>
+					</div>
+					<img id="headerLogo" src="../assets/img/logo.png" alt="">
+				</div>
+				<div id="displayTitle" class="col-md-7">
+					
+				</div>
+				<div id="userInfo" class="col-md-2">
+					<div class="btn-group">
+						<button id="userDetails" class="logout-btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+						</button>
+						<ul class="dropdown-menu animation-expand ul-logout">
+							<li><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header> -->
+		<div id="mainDiv">
+			<div id="content" style="padding-top: 0px;">
+				<div id="fm-alerts" class="fnt-20">
+
+				</div>
+				<div id="displayLayout">
+
+				</div>
+				<div id="displayActivities" class="row footer txt-center">
+					
+				</div>
+			</div>	
+
+			<!-- Adding Menubar -->
+			<!-- BEGIN MENUBAR-->
+			<!-- <div id="menubar" class="menubar-inverse">
+				<div class="menubar-fixed-panel">
+					<div>
+						<a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+							<i class="fa fa-bars"></i>
+						</a>
+					</div>
+					<div class="brand-holder">
+					</div>
+				</div>
+				<div class="menubar-scroll-panel">
+					<div onclick="getDetails('|100001|1')">
+						Customer Onboarding
+					</div>
+					<br />
+					<div onclick="getDetails('|110000')">
+						Create Gate-Entry
+					</div>
+					<br />
+					<div>
+						Create PO
+					</div>
+					<br />
+					<div>
+						Create SO
+					</div>
+				</div>
+			</div> -->
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						Select Option
+					</div>
+					<div class="modal-body">
+						Are you sure you want to cancel operation ?
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+						<button type="button" class="btn btn-primary" onClick="location.href='dashboard.html'">Yes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- BEGIN JAVASCRIPT -->
+			
+		<script src="../assets/js/libs/jquery/jquery-1.11.2.min.js"></script>
+		<script src="../assets/js/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
+		<script src="../assets/js/libs/jquery-ui/jquery-ui.min.js"></script>
+		<script src="../assets/js/libs/bootstrap/bootstrap.min.js"></script>
+		<script src="../assets/js/libs/spin.js/spin.min.js"></script>
+		<script src="../assets/js/libs/autosize/jquery.autosize.min.js"></script>
+		<script src="../assets/js/libs/bootstrap-rating/bootstrap-rating-input.min.js"></script>
+		<script src="../assets/js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
+		<script src="../assets/js/core/source/App.js"></script>
+		<script src="../assets/js/core/source/AppNavigation.js"></script>
+		<script src="../assets/js/core/source/AppOffcanvas.js"></script>
+		<script src="../assets/js/core/source/AppCard.js"></script>
+		<script src="../assets/js/core/source/AppForm.js"></script>
+		<script src="../assets/js/core/source/AppNavSearch.js"></script>
+		<script src="../assets/js/core/source/AppVendor.js"></script>
+		<script src="../assets/js/core/demo/Demo.js"></script>
+		<script src="../assets/js/core/demo/DemoDocs.js"></script>
+
+		<!-- <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script> -->
+		<!-- END JAVASCRIPT -->
+
+	</body>
+</html>
