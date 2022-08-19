@@ -38,7 +38,7 @@ if (isLocalhost) {
 
   awsExports.oauth.redirectSignOut = signOutURI[0]
 
-} else if (window.location.hostname === 'https://main.d211rykl745cll.amplifyapp.com/'){
+} else if (window.location.hostname === 'https://main.d3q37q9yqw352s.amplifyapp.com/'){
 
   awsExports.oauth.redirectSignIn = signInURI[1]
 
